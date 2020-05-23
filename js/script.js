@@ -197,8 +197,8 @@ let openMenu = () => {
     navBar.classList.toggle('navbar-top-space');
     main.classList.toggle('main-page-close');
 }
- 
 btnMenu.onclick = openMenu;
+
 })();
 
 
