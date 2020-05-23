@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>favorite-jokes</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="MSI-title">MSI 2020</h3>
+        <div class="main-page">
+            <div class="search-details">
+                <div class="introduction">
+                    <h1>Hey!</h1>
+                    <h2>Let's try to find a joke for you: </h2>
+                </div>
+                <div class="sorts">
+                    <div class="sort-type">
+                        <label class="radio">Random
+                            <input type="radio" name="searchType" value="random" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="sort-type">
+                        <label class="radio">From categories
+                            <input type="radio" name="searchType" value="fromCategories">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="categories-container">
+                    </div>
+                    <div class="sort-type">
+                        <label class="radio">Search
+                            <input type="radio" name="searchType" value="manualCategory">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="free-text">
+                            <input type="text" class="manual-category" placeholder="Free text search...">
+                            <span class="error-message"></span>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btnGetJoke">Get a joke</button>
+            </div>
+            <div class="jokes-container">
+            </div>
+            <button class="btn btn-get-more">Get more</button>
+        </div>
+        <div class="favourite-container">
+        </div>
+        <div class="navbar">
+            <h2 class="favourite-title">Favourite</h2>
+            <div class="hamburger-menu">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+            </div>
+        </div>
+        <button class="btn btn-scroll-up">&#8593;</button>
+        <script src="./js/script.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/favourite.js"></script>
+</body>
+
+</html>
